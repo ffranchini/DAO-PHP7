@@ -18,8 +18,12 @@ require_once("config.php");
 
 
 //carrega usuario usando login e senha
-$usuario = new Usuario();
-$usuario->login("root", "54321");
+//$usuario = new Usuario();
+//$usuario->login("root", "54321");
+//echo $usuario;
+
+$usuario = new Usuario("aluno2", "senha123");
+$usuario->insert();
 echo $usuario;
 
 ?>
